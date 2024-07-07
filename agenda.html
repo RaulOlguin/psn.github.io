@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+    <!-- Estilo de limpieza ajuste para todos los navegadores -->
+    <link rel="stylesheet" href="estilo/limpia.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+
+    <!-- Bootstrap iconos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Estilo -->
+    <link rel="stylesheet" href="estilo/mi_estilo.css">    
+
+
+    <title>PROYECTO SIN NOMBRE</title>
+  </head>
+  <body>
+
+
+    <!---------------------------- side bar---------------------------------->
+    <div id="pagina" class="container-fluid p-0 m-0">
+      <div class="row p-0 m-0">
+        <div id="navegacion" class="col-2  bg-success p-0 m-0 position-relative" style="min-height: 100dvh;">
+                      
+          <nav class="nav flex-column ms-0 ms-sm-1 ms-md-3 mt-5 mx-auto">
+            <a href="index.html" class="nav-link active text-white"><i class="bi bi-book"></i> <span class="d-none d-md-inline">Portada</span></a>
+            <a href="inicio2.html" class="nav-link active text-white"><i class="bi bi-house"></i> <span class="d-none d-md-inline">Inicio</span></a>
+            <a href="agenda.html" class="nav-link text-white"><i class="bi bi-calendar-event"></i> <span class="d-none d-md-inline">Agenda una hora</span></a>
+            <a href="contacto.html" class="nav-link text-white"><i class="bi bi-chat-dots"></i> <span class="d-none d-md-inline"> Contacto</span></a>
+            <a href="tienda.html" class="nav-link text-white"><i class="bi bi-shop"></i> <span class="d-none d-md-inline">Canje de Puntos</span></a>
+            
+         </nav>
+          <hr>
+          <nav class="nav flex-column ms-0 ms-sm-1 ms-md-3 mx-auto" >
+            <a href="dash.html" class="nav-link active text-white"><i class="bi bi-graph-up-arrow"></i> <span class="d-none d-md-inline">Estadisticas</span></a>
+            <a href="retiro.html" class="nav-link text-white"><i class="bi bi-calendar-range"></i> <span class="d-none d-md-inline">Calendario Retiro</span></a>
+          </nav>
+    
+          <div class="nav flex-column ms-0 ms-sm-1 ms-md-3 mt-5 mx-auto">
+              <a href="index.html" class="link-item"><button type="button" class="btn btn-success border border-white"><i class="bi bi-x-circle"></i> <span class="d-none d-md-inline">Cerrar sesion</span></button></a>
+          </div>
+    
+        </div>
+<!---------------------------- titulo ---------------------------------->
+
+
+    <div id="contenidoPagina" class="col overflow-auto vh-100">
+      
+      <div id="titulo2" class="container-fluid m-1 p-4 border-black">
+        <div class="row">
+           <div class="col-12 col-md-6">
+             <h1 class="fs-3"> <img src="img/botella__.webp" alt="" class="img-fluid"/>PROYECTO SIN NOMBRE</h1>
+          </div>
+          <div class="col-12 col-md-6">
+              <h2 class="text-end"> Usuario <img src="img/usuarios_1.jpg" class="img-fluid rounded-circle"></h2>
+
+          </div>
+        </div>
+       </div>
+
+<!----------------------- contenido -------------------------------->
+
+      <div id="con" class="container m-1 p-2" style="background-color: rgba(255, 255, 255, .7);" >
+
+        <form action="#">
+
+
+          <h2>Agenda Tu Retiro</h2>
+
+
+
+          <fieldSet>
+            <legend>Fecha retiro</legend>
+
+            <ul class="list-group">
+              <li class="list-group-item"><input type="date" id="fecha"></li>  
+              <li class="list-group-item">
+                  <input type="radio" name="horario" id="horario1" value="mañana" class="form-check-input"><label for="horario1" class="form-check-label">Mañana</label>
+              </li>
+              <li class="list-group-item">
+                  <input type="radio" name="horario" id="horario2" value="tarde" class="form-check-input"><label for="horario2" class="form-check-label">Tarde</label>
+              </li>
+            </ul>
+            
+          </fieldSet>
+
+
+          <fieldSet>
+            <legend>Materiales</legend>
+
+            
+              <!--botella plastica-->
+              <div class="row bg-light m-0 p-0">
+                <div class = "col-auto">
+                  <input type="checkbox" name="botellaPlastica" id="botellaP" value="botellaPlastica" class="form-check-input">  
+                </div>
+                <div class="col-auto col-md-2">
+                  <label for="botellaP" class="form-check-label"> Botella plastica </label> 
+                </div>
+                <div class="col-auto col-md-5">
+                  <input type="range" name="cantidadbP" id="cantidadBp" class="form-control" min="50" max="1000" value="50" oninput="cantidadbpNum.innerText = this.value">
+                </div>
+                <div class="col-auto">
+                  <p><span id="cantidadbpNum">50</span> Unidades</p>
+                </div>
+              </div>
+
+
+          
+              <!--botella vidrio-->
+              <div class="row bg-light m-0 p-0">
+                <div class = "col-auto">
+                  <input type="checkbox" name="botellaVidrio" id="botellaV" value="botellaVidrio" class="form-check-input">
+                </div>
+                <div class="col-auto col-md-2">
+                  <label for="botellaV" class="form-check-label">Botella Vidrio &nbsp;</label>
+                </div>
+                <div class="col-auto col-md-5">
+                   <input type="range" name="cantidadbV" id="cantidadBV" class="form-control" min="50" max="1000" value="50" oninput="cantidadbvNum.innerText = this.value">
+                </div>
+                <div class="col-auto">
+                  <p><span id="cantidadbvNum">50</span> Unidades</p>
+                </div>
+              </div>
+              
+              <!--papel-->
+       
+                <div class="row bg-light m-0 p-0">
+                  <div class = "col-auto">
+                    <input type="checkbox" name="papel" id="papel" value="papel" class="form-check-input">    
+                  </div>
+                  <div class="col-auto col-md-2">
+                    <label for="papel" class="form-check-label">Papel y Carton</label>     
+                  </div>
+                  <div class="col-auto col-md-5">
+                     <input type="range" name="cantidadPapel" id="cantidadPapel" class="form-control" min="10" max="100" value="10" oninput="cantidadPapelNum.innerText = this.value"> 
+                  </div>
+                  <div class="col-auto">
+                    <p><span id="cantidadPapelNum">10</span> Kg</p>
+                  </div>
+                </div>
+
+              <!--latas-->
+              
+                <div class="row bg-light m-0 p-0">
+                  <div class = "col-auto">
+                    <input type="checkbox" name="latas" id="latas" value="latas" class="form-check-input">
+                  </div>
+                  <div class="col-auto col-md-2">
+                    <label for="latas" class="form-check-label">Latas</label>     
+                  </div>
+                  <div class="col-auto col-md-5">
+                    <input type="range" name="cantidadLatas" id="cantidadLatas" class="form-control" min="100" max="1000" value="100" oninput="cantidadLatasNum.innerText = this.value">
+                  </div>
+                  <div class="col-auto">
+                    <p><span id="cantidadLatasNum">100</span> Unidades</p>
+                  </div>
+                </div>
+
+
+              
+              <!--electronica-->
+
+              <div class="row bg-light m-0 p-0">
+                <div class = "col-auto">
+                  <input type="checkbox" name="electronicos" id="electronicos" value="electronicos" class="form-check-input">
+                </div>
+                <div class="col-auto col-md-2">
+                  <label for="electronicos" class="form-check-label">Desechos Electronicos</label>
+                </div>
+                <div class="col-auto col-md-5">
+                  <input type="range" name="cantidadelec" id="cantidadelec" class="form-control" min="1" max="100" value="1" oninput="cantidadELecNum.innerText = this.value">
+                </div>
+                <div class="col-auto">
+                  <p><span id="cantidadELecNum">1</span> Unidades</p>
+                </div>
+              </div>
+           
+          </fieldSet>
+
+          <button id="enviar" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"class="btn btn-success px-4 m-4">Enviar</button>
+
+        </form>
+       
+        
+      </div><!--fin contenido-->
+    </div>
+  </div>  
+</div><!--fin de la tabla-->
+
+ <!------------------------------------------------------ modals ------------------------------------------------------------>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Mensaje</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h5 class="text-center"> TU RETIRO SE HA AGENDADO</h5>
+                <p class="text-center fs-3">Estaremos en contacto para afinar detalles</p>
+            </div>
+            <div class="modal-footer">
+              <a href="agenda.html"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!--jquery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!--bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    
+<script>
+  $("#enviar").click(function(){
+    $(":input").each(function(){
+      $(this).val('');
+    });
+
+    $(":checkbox").prop('checked',false);
+    $("input[type=radio]").prop('checked', false);
+    
+
+  });
+
+</script>
+  </body>
+</html>

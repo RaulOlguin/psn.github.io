@@ -1,0 +1,74 @@
+
+body{
+    
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    
+    background-image: url("../img/papel\ reciclado.jpg");
+    background-repeat: repeat;
+
+}
+
+#titulo{
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#titulo2{
+    color: rgb(25, 25, 25);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#titulo h1{
+    font-size: 4em;
+}
+
+#titulo h2{
+    font-size: 2em;
+}
+
+#titulo .p5{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+#contenido{
+    background-image: url("../img/papel\ reciclado.jpg");
+    background-repeat: repeat;
+    background-color: transparent;
+}
+
+.comenta{
+    background-color: lightgrey;
+    border: 1px solid black;
+    
+
+}
+.comenta input{
+    border-radius: 20em;
+
+}
+
+.persona{
+    background-color: gold;
+    border-radius: 1em;
+
+}
+
+#navegacion nav a:hover{
+    text-transform: uppercase;
+    
+
+} 
+
+
+
+.contacto:hover{
+    background-color: goldenrod;
+
+}
+
+.mensajeEscondido{
+    display: none;
+}

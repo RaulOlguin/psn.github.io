@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+    <!-- Estilo de limpieza ajuste para todos los navegadores -->
+    <link rel="stylesheet" href="estilo/limpia.css">
+
+
+     <!--jquery-->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+
+    <!-- Bootstrap iconos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Estilo -->
+    <link rel="stylesheet" href="estilo/mi_estilo.css">    
+
+
+    <title>PROYECTO SIN NOMBRE</title>
+  </head>
+  <body>
+
+
+    <!---------------------------- side bar---------------------------------->
+    <div id="pagina" class="container-fluid p-0 m-0">
+      <div class="row p-0 m-0">
+        <div id="navegacion" class="col-2  bg-success p-0 m-0 position-relative" style="min-height: 100dvh;">
+                      
+          <nav class="nav flex-column ms-0 ms-sm-1 ms-md-3 mt-5 mx-auto">
+            <a href="index.html" class="nav-link active text-white"><i class="bi bi-book"></i> <span class="d-none d-md-inline">Portada</span></a>
+            <a href="inicio2.html" class="nav-link active text-white"><i class="bi bi-house"></i> <span class="d-none d-md-inline">Inicio</span></a>
+            <a href="agenda.html" class="nav-link text-white"><i class="bi bi-calendar-event"></i> <span class="d-none d-md-inline">Agenda una hora</span></a>
+            <a href="contacto.html" class="nav-link text-white"><i class="bi bi-chat-dots"></i> <span class="d-none d-md-inline"> Contacto</span></a>
+            <a href="tienda.html" class="nav-link text-white"><i class="bi bi-shop"></i> <span class="d-none d-md-inline">Canje de Puntos</span></a>
+            
+         </nav>
+          <hr>
+          <nav class="nav flex-column ms-0 ms-sm-1 ms-md-3 mx-auto" >
+            <a href="dash.html" class="nav-link active text-white"><i class="bi bi-graph-up-arrow"></i> <span class="d-none d-md-inline">Estadisticas</span></a>
+            <a href="retiro.html" class="nav-link text-white"><i class="bi bi-calendar-range"></i> <span class="d-none d-md-inline">Calendario Retiro</span></a>
+          </nav>
+    
+          <div class="nav flex-column ms-0 ms-sm-1 ms-md-3 mt-5 mx-auto">
+              <a href="index.html" class="link-item"><button type="button" class="btn btn-success border border-white"><i class="bi bi-x-circle"></i> <span class="d-none d-md-inline">Cerrar sesion</span></button></a>
+          </div>
+    
+        </div>
+
+<!---------------------------- contenido ---------------------------------->
+
+
+    <div id="contenidoPagina" class="col overflow-auto vh-100">
+      
+      <div id="titulo2" class="container-fluid m-1 p-4 border-black">
+        <div class="row">
+           <div class="col-12 col-md-6">
+             <h1 class="fs-3"> <img src="img/botella__.webp" alt="" class="img-fluid"/>PROYECTO SIN NOMBRE</h1>
+          </div>
+          <div class="col-12 col-md-6">
+              <h2 class="text-end"> Usuario <img src="img/usuarios_1.jpg" class="img-fluid rounded-circle"></h2>
+
+          </div>
+        </div>
+      
+      </div>
+
+      <div id="con" class="container m-1 p-2 h-100" style="background-color: rgba(255, 255, 255, .7);" >
+
+        <div class="container m-3 p-3">
+          <h2><i class="bi bi-shop"></i> Tienda Canje de Puntos</h2>
+          <h3 class="text-center" style="color:goldenrod">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> <span id="puntosCliente">34578</span> <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></h3>
+
+        </div>
+
+
+
+        
+        <div class="row">
+           
+
+          <div class="col-12 col-md-4">
+            <div class="card h-100">
+              <div class="card-header">
+                <h5>Maquillaje Petrizzio CatWoman</h5>
+              </div>
+              <img src="img/maquillaje.webp" class="card-img" >
+
+              <div class="card-body">
+                <ul class="py-3 list-group">
+                  <li class="list-group-item">marca: Petrizzio</li>
+                  <li class="list-group-item">testeado en animales no</li>
+                  <li class="list-group-item">contenido 8 unidades</li>
+                  <li class="list-group-item">cantidad en tienda 10</li>
+                </ul>
+              </div>
+              <div class="card-footer">
+                <div class="row">
+                  <h6 class="text-start">costo : 2.000</h6>
+                </div>
+                <div class="row justify-content-end">
+                  <button type="button" class="btn btn-success botonCanje" data-bs-toggle="modal" data-bs-target="#exampleModal" data-precioCanje="2000">canjear</button>
+                </div>                  
+
+              </div>
+            </div>
+          </div><!-- fin sexta tarjeta-->
+
+
+
+          <div class="col-12 col-md-4">
+              <div class="card h-100">
+                <div class="card-header">
+                  <h5>Nintendo switch</h5>
+                </div>
+                <img src="img/nintendo_switch.webp" class="card-img" >
+
+                <div class="card-body">
+                  <ul class="py-3 list-group">
+                    <li class="list-group-item">marca: Nintendo</li>
+                    <li class="list-group-item">memoria: 32 GB</li>
+                    <li class="list-group-item">color rojo</li>
+                    <li class="list-group-item">Cantidad en tienda 3 </li>
+                  </ul>
+                </div>
+                <div class="card-footer">
+                  <div class="row">
+                    <h6 class="text-start">costo : 50.000 ptos</h6>
+                  </div>
+                  <div class="row justify-content-end">
+                    <button type="button" class="btn btn-secondary botonCanje" data-bs-toggle="modal" data-bs-target="#exampleModal" data-precioCanje="50000" disabled>canjear</button>
+                  </div>                  
+
+                </div>
+              </div>
+            </div><!-- fin primera tarjeta-->
+
+            <div class="col-12 col-md-4">
+              <div class="card h-100">
+                <div class="card-header">
+                  <h5>Guitarra Clasica 39"</h5>
+                </div>
+                <img src="img/guitarra.webp" class="card-img" >
+
+                <div class="card-body">
+                  <ul class="py-3 list-group">
+                    <li class="list-group-item">marca: alaguez</li>
+                    <li class="list-group-item">origen: España</li>
+                    <li class="list-group-item">modelo az39b</li>
+                    <li class="list-group-item">cantidad en tienda 28</li>
+                  </ul>
+                </div>
+                <div class="card-footer">
+                  <div class="row">
+                    <h6 class="text-start">costo : 2.000 ptos</h6>
+                  </div>
+                  <div class="row justify-content-end">
+                    <button type="button" class="btn btn-success botonCanje" data-bs-toggle="modal" data-bs-target="#exampleModal" data-precioCanje="2000">canjear</button>
+                  </div>                  
+
+                </div>
+              </div>
+            </div><!-- fin segunda tarjeta-->
+
+
+            <div class="col-12 col-md-4">
+              <div class="card h-100">
+                <div class="card-header">
+                  <h5>Microondas Midea</h5>
+                </div>
+                <img src="img/microondas.webp" class="card-img" >
+
+                <div class="card-body">
+                  <ul class="py-3 list-group">
+                    <li class="list-group-item">marca: Midea</li>
+                    <li class="list-group-item">capacidad: 23 litros</li>
+                    <li class="list-group-item">potencia 1200 w</li>
+                    <li class="list-group-item">cantidad en tienda 15</li>
+                  </ul>
+                </div>
+                <div class="card-footer">
+                  <div class="row">
+                    <h6 class="text-start">costo : 15.000 ptos</h6>
+                  </div>
+                  <div class="row justify-content-end">
+                    <button type="button" class="btn btn-success botonCanje" data-bs-toggle="modal" data-bs-target="#exampleModal" data-precioCanje="15000">canjear</button>
+                  </div>                  
+
+                </div>
+              </div>
+            </div><!-- fin tercera tarjeta-->
+
+
+            <div class="col-12 col-md-4">
+              <div class="card h-100">
+                <div class="card-header">
+                  <h5>Mesa Ping Pong</h5>
+                </div>
+                <img src="img/pingpong.webp" class="card-img" >
+
+                <div class="card-body">
+                  <ul class="py-3 list-group">
+                    <li class="list-group-item">superficie MDF</li>
+                    <li class="list-group-item">estructura acero</li>
+                    <li class="list-group-item">Medidas: 76 x 152,5 x 274 cm</li>
+                    <li class="list-group-item">cantidad en tienda 5</li>
+                  </ul>
+                </div>
+                <div class="card-footer">
+                  <div class="row">
+                    <h6 class="text-start">costo : 21.000 ptos</h6>
+                  </div>
+                  <div class="row justify-content-end">
+                    <button type="button" class="btn btn-success botonCanje" data-bs-toggle="modal" data-bs-target="#exampleModal" data-precioCanje="21000">canjear</button>
+                  </div>                  
+
+                </div>
+              </div>
+            </div><!-- fin cuarta tarjeta-->
+
+            <div class="col-12 col-md-4">
+              <div class="card h-100">
+                <div class="card-header">
+                  <h5>Parrilla Oregon BBQ</h5>
+                </div>
+                <img src="img/parrilla.webp" class="card-img" >
+
+                <div class="card-body">
+                  <ul class="py-3 list-group">
+                    <li class="list-group-item">marca: Oregon BBQ</li>
+                    <li class="list-group-item">Area coccion 71 x 38 cm</li>
+                    <li class="list-group-item">alto ancho prof 102 108 70</li>
+                    <li class="list-group-item">cantidad en tienda 5</li>
+                  </ul>
+                </div>
+                <div class="card-footer">
+                  <div class="row">
+                    <h6 class="text-start">costo : 10.000 ptos</h6>
+                  </div>
+                  <div class="row justify-content-end">
+                    <button type="button" class="btn btn-success botonCanje" data-bs-toggle="modal" data-bs-target="#exampleModal" data-precioCanje="10000">canjear</button>
+                  </div>                  
+
+                </div>
+              </div>
+            </div><!-- fin quinta tarjeta-->
+
+
+      </div><!--fin contenido-->
+    </div>
+  </div>  
+</div><!--fin de la tabla-->
+
+ <!------------------------------------------------------ modals ------------------------------------------------------------>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Mensaje</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h5 class="text-center"> TU CANJE SE HA COMPLETADO</h5>
+                <p class="text-center fs-3">Durante la Semana nos contactaremos para hacer el envio solicitado</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    
+<script>
+    $(".botonCanje").on("click",function(){
+      
+      var valor = $(this).attr("data-precioCanje");
+      var puntosCanje = $("#puntosCliente").html();
+      
+      $("#puntosCliente").html((puntosCanje - valor));
+     
+
+      $(".botonCanje").each(function(){
+        var valor2 = $(this).attr("data-precioCanje");
+        var puntosCanje2 = $("#puntosCliente").html();
+      
+        if (parseInt(puntosCanje2) < parseInt(valor2)){
+          console.log(puntosCanje2 + " " + valor2)
+          $(this).attr("disabled", true);
+          $(this).removeClass("bg-success");
+          $(this).addClass("bg-secondary");
+
+        }
+
+      });
+
+
+    });
+
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>
